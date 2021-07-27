@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <script>
+        const queryString = window.location.search;
+        console.log(queryString);
+        const urlParams = new URLSearchParams(queryString);
+        const uid = urlParams.get('uid');
+        const smart_pid = 'smart_pid=' + uid;
+        document.cookie = smart_pid;
+        console.log(smart_pid);
+        alert(smart_pid);
+    </script>
+</body>
+</html>
